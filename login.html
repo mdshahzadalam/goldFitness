@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Bodybuilder Fitness Club Black Logo (1).png" />
+</head>
+ <body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup" id="signUp">
+          <form method="post" action="register.php">
+            
+          <label for="chk" aria-hidden="true">Sign up</label>
+          <input type="text"  placeholder="First Name" required="" name="fName">
+          <input type="text"  placeholder="Last Name" required="" name="lName">
+          <input type="email"  placeholder="Email" required="" name="email">
+          <input type="number"  placeholder="Phone no" required="" name="phonen0">
+          <input type="number"  placeholder="Age" required="" name="age">
+         
+          <input type="Password"  placeholder="Password" required="" name="password">
+          
+          <button type="submit" value="Sign Up" name="signUp" id="signUpButtom">Sign up</button>
+
+          </form>
+          </div>
+
+          <div class="login" id="signIn">
+           <form method="post" action="register.php">
+           <label for="chk" aria-hidden="true">Login</label>
+           <input type="email" name="email" placeholder="Email" required=" "> 
+           <input type="Password" name="password" placeholder="Password" required="">
+        <button type="submit" value="Sign In " name="signIn" id="signInButton">Login </button>
+        </form>
+        </div>
+        <script src="loginscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/*sign in login form*/
+body{
+margin: 0;
+display:flex;
+padding: 0;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+font-family: 'Jost', sans-serif;
+/* background: linear-gradient(to bottom, rgba(43, 43, 43, 0.9),rgb(55, 52, 37),rgb(0, 0, 0)); */
+/* background-image: url("https://img.freepik.com/free-vector/golden-swirl-frame-dark-background-with-text-space_1017-30124.jpg?w=996&t=st=1712520897~exp=1712521497~hmac=83e79eff96178ab2b8ed5f22ca50d48573fcbb72e9e6a19be6dde9b90612ef6b"); */
+background-color: #c7c1b2;
+
+}
+
+.main{
+width: 350px;
+height:700px;
+background: red;
+overflow: hidden;
+background: url("https://w0.peakpx.com/wallpaper/691/230/HD-wallpaper-gold-0010-abstract-background-brisk-luxury-plane-stainless.jpg") no-repeat center / cover;
+border-radius: 10px;
+box-shadow: 5px 20px 50px#000;
+}
+
+
+#chk{
+    display:none;
+}
+
+.signup{
+    position: relative;
+    width:100%;
+    height:100%;
+    color:rgb(0, 0, 0);
+}
+
+label{
+    color: rgb(0, 0, 0);
+    font-size:2.3em;
+    justify-content:center;
+    display:flex;
+    margin: 60px;
+    font-weight:bold;
+    cursor:pointer;
+    transition: .5s ease-in-out;
+}
+
+input{
+    width:60%;
+    height:20px;
+    background:#e0dede;
+    justify-content: center;
+    display:flex;
+    margin: 20px auto;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+}
+button{
+    width:60;
+    height:40px;
+    margin:10px auto;
+    justify-content:center;
+    display:block;
+    color:#000000;
+    background: gold;
+    font-size:1em;
+    font-weight:bold;
+    margin-top:20px;
+    outline:none;
+    border:2px solid black;
+    box-shadow: 3px 5px 3px black;
+    border-radius: 5px;
+    transition:.2s ease-in;
+    cursor:pointer;
+
+}
+
+button:hover{
+    background-color:rgb(194, 171, 38);
+}
+
+.login{
+    height:460px;
+    background:rgb(255, 217, 0);
+    border-radius: 60% / 10%;
+    transform:translateY(-180px); 
+    transition: .8s ease-in-out;
+
+}
+ .login label{
+    color:rgb(0, 0, 0);
+    transform: scale(.6);
+
+ }
+
+ #chk:checked ~ .login{
+    transform:translateY(-500px);
+ }
+
+ #chk:checked ~ .login label{
+    transform:scale(1);
+ }
+
+ #chk:checked ~ .signup label{
+    transform:scale(.6);
+    color: gold;
+
+ }
